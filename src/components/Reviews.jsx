@@ -69,7 +69,7 @@ const Reviews = () => {
         </div>
 
         {/* Container */}
-        <div className="relative mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:py-16 lg:px-8 xl:py-24">
+        <div id="review" className="relative mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:py-16 lg:px-8 xl:py-24">
           <div className="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8">
             <h2 className="max-w-xl text-4xl font-bold tracking-tight text-gray-300 sm:text-5xl">
               Read trusted reviews from our customers
@@ -121,53 +121,99 @@ const Reviews = () => {
           </div>
 
           {/* Slider */}
-          <div className="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
-            <div ref={sliderRef} className="keen-slider">
-              <div className="keen-slider__slide">
-                <blockquote className="rounded-xl shadow-2xl flex h-full flex-col justify-between bg-gradient-to-bl from-[#c78fae] via-[#d498e6] to-[#aca9c9] relative p-6 shadow-xs sm:p-8 lg:p-12">
-                  <div>
-                    <div className="flex gap-0.5 text-green-500">⭐⭐⭐⭐⭐</div>
+<div className="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
+  <div ref={sliderRef} className="keen-slider">
+    <div className="keen-slider__slide">
+      <blockquote className="rounded-xl shadow-2xl flex h-full flex-col justify-between bg-gradient-to-bl from-[#c78fae] via-[#d498e6] to-[#aca9c9] relative p-6 shadow-xs sm:p-8 lg:p-12">
+        <div>
+          <div className="flex gap-0.5 text-green-500">⭐⭐⭐⭐⭐</div>
 
-                    <div className="mt-4">
-                      <p className="text-2xl font-bold text-rose-600 sm:text-3xl">
-                        Amazing Experience!
-                      </p>
-                      <p className="mt-4 leading-relaxed text-gray-700">
-                        The service was fantastic, and the team was very
-                        professional. Highly recommended!
-                      </p>
-                    </div>
-                  </div>
-
-                  <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                    &mdash; John Doe
-                  </footer>
-                </blockquote>
-              </div>
-
-              <div className="keen-slider__slide">
-                <blockquote className=" rounded-xlshadow-2xl flex h-full flex-col justify-between bg-gradient-to-bl from-[#c78fae] via-[#d498e6] to-[#aca9c9] relative p-6 shadow-xs sm:p-8 lg:p-12">
-                  <div>
-                    <div className="flex gap-0.5 text-green-500">⭐⭐⭐⭐⭐</div>
-
-                    <div className="mt-4">
-                      <p className="text-2xl font-bold text-rose-600 sm:text-3xl">
-                        Worth Every Penny!
-                      </p>
-                      <p className="mt-4 leading-relaxed text-gray-700">
-                        Professional, responsive, and very skilled. I couldn't
-                        have asked for a better experience.
-                      </p>
-                    </div>
-                  </div>
-
-                  <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                    &mdash; Jane Smith
-                  </footer>
-                </blockquote>
-              </div>
-            </div>
+          <div className="mt-4">
+            <p className="text-2xl font-bold text-rose-600 sm:text-3xl">
+              Great Website, Highly Professional!
+            </p>
+            <p className="mt-4 leading-relaxed text-gray-700">
+              Yuvraj did an amazing job on my website. He understood my
+              requirements perfectly and delivered beyond expectations. Will
+              definitely hire again!
+            </p>
           </div>
+        </div>
+
+        <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+          &mdash; Harpreet Singh, Ludhiana
+        </footer>
+      </blockquote>
+    </div>
+
+    <div className="keen-slider__slide">
+      <blockquote className="rounded-xl shadow-2xl flex h-full flex-col justify-between bg-gradient-to-bl from-[#c78fae] via-[#d498e6] to-[#aca9c9] relative p-6 shadow-xs sm:p-8 lg:p-12">
+        <div>
+          <div className="flex gap-0.5 text-green-500">⭐⭐⭐⭐⭐</div>
+
+          <div className="mt-4">
+            <p className="text-2xl font-bold text-rose-600 sm:text-3xl">
+              Excellent Work for My Business!
+            </p>
+            <p className="mt-4 leading-relaxed text-gray-700">
+              My e-commerce website was handled very professionally. The design
+              was sleek, and the functionality was top-notch. Highly recommended!
+            </p>
+          </div>
+        </div>
+
+        <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+          &mdash; Simran Kaur, Amritsar
+        </footer>
+      </blockquote>
+    </div>
+
+    <div className="keen-slider__slide">
+      <blockquote className="rounded-xl shadow-2xl flex h-full flex-col justify-between bg-gradient-to-bl from-[#c78fae] via-[#d498e6] to-[#aca9c9] relative p-6 shadow-xs sm:p-8 lg:p-12">
+        <div>
+          <div className="flex gap-0.5 text-green-500">⭐⭐⭐⭐⭐</div>
+
+          <div className="mt-4">
+            <p className="text-2xl font-bold text-rose-600 sm:text-3xl">
+              Very Responsive & Skilled Developer!
+            </p>
+            <p className="mt-4 leading-relaxed text-gray-700">
+              Needed a landing page for my restaurant, and Yuvraj delivered a
+              stunning design with smooth animations. Very happy with the work!
+            </p>
+          </div>
+        </div>
+
+        <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+          &mdash; Rajveer Chawla, Jalandhar
+        </footer>
+      </blockquote>
+    </div>
+
+    <div className="keen-slider__slide">
+      <blockquote className="rounded-xl shadow-2xl flex h-full flex-col justify-between bg-gradient-to-bl from-[#c78fae] via-[#d498e6] to-[#aca9c9] relative p-6 shadow-xs sm:p-8 lg:p-12">
+        <div>
+          <div className="flex gap-0.5 text-green-500">⭐⭐⭐⭐⭐</div>
+
+          <div className="mt-4">
+            <p className="text-2xl font-bold text-rose-600 sm:text-3xl">
+              Perfect Social Media & Website Solution!
+            </p>
+            <p className="mt-4 leading-relaxed text-gray-700">
+              Yuvraj and his team managed my business's social media and created
+              a beautiful website. My customer engagement has increased a lot!
+            </p>
+          </div>
+        </div>
+
+        <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+          &mdash; Amandeep Sharma, Chandigarh
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</div>
+
         </div>
       </section>
     </div>

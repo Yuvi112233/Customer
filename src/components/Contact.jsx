@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-
+import Particles from './Particles';
 const Contact = () => {
   const formRef = useRef(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -31,8 +31,9 @@ const Contact = () => {
   }, [isLoaded]);
 
   return (
-    <div className="contact-page ">
-      <div className="dark:bg-gray-700">
+    <div className="contact-page relative">
+     
+      <div id="contact" className="dark:bg-gray-700">
         <motion.h1
           className="py-8 text-2xl font-semibold text-gray-300 sm:text-3xl text-center font-poppins"
           initial={{ opacity: 0, y: 50 }} 
@@ -43,6 +44,7 @@ const Contact = () => {
           Get in Touch!
         </motion.h1>
       </div>
+       
 
       {/* Lazy-loaded Visme Form */}
       <div
@@ -54,7 +56,20 @@ const Contact = () => {
         data-full-page="false"
         data-min-height="500px"
         data-form-id="120011"
-      ></div>
+      >
+        <div className="absolute inset-0">
+    <Particles
+      particleColors={['#ffffff', '#ffffff']}
+      particleCount={200}
+      particleSpread={10}
+      speed={0.1}
+      particleBaseSize={100}
+      moveParticlesOnHover={false}
+      alphaParticles={false}
+      disableRotation={false}
+    />
+  </div>
+      </div>
     </div>
   );
 };

@@ -1,15 +1,15 @@
 import React from 'react'
 import BounceCards from './BounceCards'
 import { motion } from "framer-motion";
+import b1 from "../assets/b1.jpg";
 import Particles from './Particles';
+import an1 from "../assets/an1.jpg";
+import an2 from "../assets/an2.jpg";
+import an3 from "../assets/an3.jpeg";
+import an4 from "../assets/an4.jpeg";
+import an5 from "../assets/an5.jpeg";
 
-const images = [
-    "https://picsum.photos/400/400?grayscale",
-    "https://picsum.photos/500/500?grayscale",
-    "https://picsum.photos/600/600?grayscale",
-    "https://picsum.photos/700/700?grayscale",
-    "https://picsum.photos/300/300?grayscale"
-  ];
+const images = [an1, an2, an3, an4, an5];
   const transformStyles = [
     "rotate(5deg) translate(-150px)",
     "rotate(0deg) translate(-70px)",
@@ -39,29 +39,45 @@ const Body = () => {
     />
   </div>
   <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
-      <div>
-        <div className="max-w-lg md:max-w-none">
-          <h2 className="text-2xl font-semibold text-gray-300 sm:text-3xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h2>
+  <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-12 p-6 bg-gray-900 rounded-2xl shadow-lg">
+  {/* Left Content Section */}
+  <div className="max-w-lg">
+    <h2 className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-purple-400 to-blue-500 text-transparent bg-clip-text">
+      🚀 Transform Your Business with a High-Impact Digital Presence
+    </h2>
 
-          <p className="mt-4 text-gray-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloremque saepe
-            architecto maiores repudiandae amet perferendis repellendus, reprehenderit voluptas
-            sequi.
-          </p>
-        </div>
-      </div>
+    <p className="mt-4 text-gray-300 leading-relaxed">
+      👨‍💻 <span className="font-semibold text-white">Custom Websites</span> | 🎯 <span className="font-semibold text-white">Digital Marketing</span> | 📈 <span className="font-semibold text-white">Growth Strategies</span>
+    </p>
 
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1731690415686-e68f78e2b5bd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          className="rounded-xl"
-          alt=""
-        />
-      </div>
-    </div>
+    <p className="mt-2 text-gray-400">
+      Your website is the first impression of your brand. I help businesses create **modern, responsive, and high-performance** websites that drive results.  
+      Whether you're looking for a **sleek portfolio, an e-commerce store, or a business website**, I bring expertise in:
+    </p>
+
+    <ul className="mt-4 space-y-2 text-gray-300">
+      <li>✅ <span className="font-medium text-white">MERN Stack Development</span> (React, Node.js, Express, MongoDB)</li>
+      <li>✅ <span className="font-medium text-white">SEO-Optimized & Mobile-Responsive Designs</span></li>
+      <li>✅ <span className="font-medium text-white">Social Media & Content Marketing for Brand Growth</span></li>
+      <li>✅ <span className="font-medium text-white">Custom Web Solutions Tailored to Your Business</span></li>
+    </ul>
+
+    <button className="mt-8 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white text-lg font-semibold rounded-lg shadow-md transition">
+      📩 Let's Build Something Amazing!
+    </button>
+  </div>
+
+  {/* Right Image Section */}
+  <div className="flex justify-center">
+  <img
+    src={b1}
+    alt="QR Code Digital Business"
+    className="w-96 md:w-[500px] lg:w-[600px] rounded-xl shadow-xl"
+  />
+</div>
+
+</div>
+
     <motion.h1
   className="py-10 text-2xl font-semibold text-gray-300 sm:text-3xl text-center font-poppins sm:block hidden"
   initial={{ opacity: 0, y: 50 }} // Start position (invisible + moved down)

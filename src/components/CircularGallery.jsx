@@ -1,4 +1,16 @@
 import { useRef, useEffect } from "react";
+import c1 from "../assets/c1.jpg";
+import c2 from "../assets/c2.jpg";
+import c3 from "../assets/c3.jpg";
+import c4 from "../assets/c4.jpg";
+import c5 from "../assets/c5.jpg";
+import c6 from "../assets/c6.jpg";
+import c7 from "../assets/c7.jpg";
+import c8 from "../assets/c8.jpg";
+import c9 from "../assets/c9.jpg";
+import c10 from "../assets/c10.jpg";
+import c11 from "../assets/c11.jpg";
+import c12 from "../assets/c12.jpg";
 import {
   Renderer,
   Camera,
@@ -327,7 +339,7 @@ class App {
   ) {
     document.documentElement.classList.remove("no-js");
     this.container = container;
-    this.scroll = { ease: 0.02, current: 0, target: 0, last: 0 };
+    this.scroll = { ease: 0.05, current: 0, target: 0, last: 0 };
     this.onCheckDebounce = debounce(this.onCheck, 200);
     this.createRenderer();
     this.createCamera();
@@ -360,54 +372,18 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      {
-        image: `https://picsum.photos/seed/1/800/600?grayscale`,
-        text: "Bridge",
-      },
-      {
-        image: `https://picsum.photos/seed/2/800/600?grayscale`,
-        text: "Desk Setup",
-      },
-      {
-        image: `https://picsum.photos/seed/3/800/600?grayscale`,
-        text: "Waterfall",
-      },
-      {
-        image: `https://picsum.photos/seed/4/800/600?grayscale`,
-        text: "Strawberries",
-      },
-      {
-        image: `https://picsum.photos/seed/5/800/600?grayscale`,
-        text: "Deep Diving",
-      },
-      {
-        image: `https://picsum.photos/seed/16/800/600?grayscale`,
-        text: "Train Track",
-      },
-      {
-        image: `https://picsum.photos/seed/17/800/600?grayscale`,
-        text: "Santorini",
-      },
-      {
-        image: `https://picsum.photos/seed/8/800/600?grayscale`,
-        text: "Blurry Lights",
-      },
-      {
-        image: `https://picsum.photos/seed/9/800/600?grayscale`,
-        text: "New York",
-      },
-      {
-        image: `https://picsum.photos/seed/10/800/600?grayscale`,
-        text: "Good Boy",
-      },
-      {
-        image: `https://picsum.photos/seed/21/800/600?grayscale`,
-        text: "Coastline",
-      },
-      {
-        image: `https://picsum.photos/seed/12/800/600?grayscale`,
-        text: "Palm Trees",
-      },
+      { image: c1, text: "QR Code Creation" },
+  { image: c2, text: "Business Card with QR Code" },
+  { image: c3, text: "Website Development" },
+  { image: c4, text: "Social Media Management " },
+  { image: c5, text: "Digital Marketing" },
+  { image: c6, text: "NFC & QR Payment Solutions " },
+  { image: c7, text: "Custom QR Codes" },
+  { image: c8, text: " Link Management Services " },
+  { image: c9, text: "Branding & Design" },
+  { image: c10, text: "Product QR Codes" },
+  { image: c11, text: "Analytics & Insights" },
+  { image: c12, text: "Client Success Stories" },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);

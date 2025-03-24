@@ -73,20 +73,14 @@ const Navbar = () => {
       </a>
       <a
         href="#blog"
-        onClick={(e) => {
-          e.preventDefault();
-          scrollToBlog();
-        }}
+       
         className="text-lg font-medium text-gray-600 transition-all duration-300 hover:text-green-500 hover:drop-shadow-lg hover:scale-110 font-poppins"
       >
         Blog
       </a>
       <a
         href="#review"
-        onClick={(e) => {
-          e.preventDefault();
-          scrollToTestimonials();
-        }}
+        
         className="text-lg font-medium text-gray-600 transition-all duration-300 hover:text-purple-500 hover:drop-shadow-lg hover:scale-110 font-poppins"
       >
         Testimonials
@@ -153,10 +147,7 @@ const Navbar = () => {
       <a
         href="#blog"
         className="block text-gray-200 font-medium hover:bg-gray-700 hover:text-green-400 px-4 py-3 rounded-lg transition-all duration-300 border-b border-gray-700"
-        onClick={(e) => {
-          e.preventDefault();
-          scrollToBlog();
-        }}
+        
       >
         Blog
       </a>
@@ -165,10 +156,7 @@ const Navbar = () => {
       <a
         href="#review"
         className="block text-gray-200 font-medium hover:bg-gray-700 hover:text-purple-400 px-4 py-3 rounded-lg transition-all duration-300 border-b border-gray-700"
-        onClick={(e) => {
-          e.preventDefault();
-          scrollToTestimonials();
-        }}
+        
       >
         Testimonials
       </a>

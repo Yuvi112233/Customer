@@ -90,20 +90,20 @@ const Body = () => {
 
 
     {/* Centered BounceCards */}
-    <div className="flex justify-center items-center mt-10">
-    
-      <BounceCards
-        className="custom-bounceCards"
-        images={images}
-        containerWidth={500}
-        containerHeight={250}
-        animationDelay={1}
-        animationStagger={0.08}
-        easeType="elastic.out(1, 0.5)"
-        transformStyles={transformStyles}
-        enableHover={true}
-      />
-    </div>
+    <div className="flex justify-center items-center mt-10 w-full overflow-hidden">
+  <BounceCards
+    className="custom-bounceCards w-[300px] h-[150px] sm:w-[500px] sm:h-[250px]" 
+    images={images}
+    containerWidth={window.innerWidth < 640 ? 300 : 500}  
+    containerHeight={window.innerWidth < 640 ? 150 : 250}  
+    animationDelay={1}
+    animationStagger={0.08}
+    easeType="elastic.out(1, 0.5)"
+    transformStyles={transformStyles}
+    enableHover={true}
+  />
+</div>
+
   </div>
 </section>
 

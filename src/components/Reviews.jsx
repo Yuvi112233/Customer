@@ -53,7 +53,7 @@ const Reviews = () => {
         rel="stylesheet"
       />
 
-      <section className="py-10 bg-slate-600  relative">
+      <section className=" bg-slate-600  relative">
         {/* Particles Background */}
         <div className="absolute inset-0">
           <Particles
